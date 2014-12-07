@@ -11,6 +11,8 @@
         }
     ],
     "require": {
+        "ext-xml":"*",
+        "ext-xsl":"*",
         "zendframework/zend-console": "~2.3.3"
     },
     "autoload": {

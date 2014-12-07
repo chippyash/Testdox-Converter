@@ -69,10 +69,18 @@ Install [Composer](https://getcomposer.org/)
 
 #### For production
 
+Assumes Linux OS. (If you are a Windows/Mac user, please consider adding installation
+and usage instructions to this repo by way of a pull request.)
+
 composer.phar create-project -sdev chippyash/testdox-converter tdconv
 
 This will download the package and install it into the ./tdconv directory. 
-./tdconv/bin/tdconv is a symlink to the executable
+./tdconv/bin/tdconv is a symlink to the executable.  If you have a ~/bin directory
+in you path you might want to move or copy the link to it, or add the bin path
+to your $PATH variable.
+
+If prompted with a "Do you want to remove the existing VCS (.git, .svn..) history?"
+message, then answer "Y" (the default answer.)
 
 #### For development
 
