@@ -1,4 +1,4 @@
-bin/
+
 composer.lock
 contract.md
 testdox-converter.xpr
