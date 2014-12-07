@@ -27,6 +27,7 @@ class Installer
     public static function ppi(Event $event)
     {
         $config = $event->getComposer()->getConfig();
+        var_dump(__DIR__);return;
         $linkFileDir = realpath(__DIR__ . '/../../../bin');
         $linkFile = $linkFileDir . '/tdconv';
         
