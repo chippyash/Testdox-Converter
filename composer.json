@@ -19,7 +19,6 @@
         }
     },
     "scripts" : {
-        "post-package-install": "chippyash\\TDConv\\Installer::ppi",
-        "post-update-cmd": "chippyash\\TDConv\\Installer::ppi"
+        "post-create-project-cmd": "chippyash\\TDConv\\Installer::pcpc"
     }
 }

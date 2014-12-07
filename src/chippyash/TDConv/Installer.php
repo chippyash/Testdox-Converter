@@ -17,20 +17,20 @@ use Composer\Script\Event;
 class Installer
 {
     /**
-     * Post Package Install event
+     * post-create-project-cmd event
      * 
      * Softlink the tdconv.php file because Composer will only do this
      * if this package is part of a bigger package
      * 
      * @param Event $event
      */
-    public static function ppi(Event $event)
+    public static function pcpc(Event $event)
     {
         $config = $event->getComposer()->getConfig();
         
         $linkFileDir = realpath(__DIR__ . '/../../..') . '/bin';
         $linkFile = $linkFileDir . '/tdconv';
-        var_dump($linkFileDir);return;
+
         if (!file_exists($linkFileDir)) {
             mkdir($linkFileDir);
         }
