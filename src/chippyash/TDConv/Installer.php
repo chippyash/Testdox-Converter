@@ -28,7 +28,7 @@ class Installer
     {
         $config = $event->getComposer()->getConfig();
         
-        $linkFileDir = realpath(__DIR__ . '/../../../bin');
+        $linkFileDir = realpath(__DIR__ . '/../../..') . '/bin';
         $linkFile = $linkFileDir . '/tdconv';
         var_dump($linkFileDir);return;
         if (!file_exists($linkFileDir)) {
