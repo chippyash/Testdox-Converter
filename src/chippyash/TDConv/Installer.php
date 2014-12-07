@@ -27,7 +27,13 @@ class Installer
     public static function ppi(Event $event)
     {
         $config = $event->getComposer()->getConfig();
-        $linkFile = realpath(__DIR__ . '/../../../bin') . '/tdconv';
+        $linkFileDir = realpath(__DIR__ . '/../../../bin');
+        $linkFile = $linkFileDir . '/tdconv';
+        
+        if (!file_exists($linkFileDir)) {
+            mkdir($linkFileDir);
+        }
+        
         if (!file_exists($linkFile)) {
             $binFile = __DIR__ . '/tdconv.php';
             symlink($binFile, $linkFile);

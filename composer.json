@@ -18,10 +18,6 @@
             "chippyash\\TDConv\\": "src"
         }
     },
-    "config" : {
-        "bin-dir" : "bin"
-    },
-    "bin" : ["src//chippyash/TDConv/tdconv.php"],
     "scripts" : {
         "post-package-install": "chippyash\\TDConv\\Installer::ppi",
         "post-update-cmd": "chippyash\\TDConv\\Installer::ppi"
