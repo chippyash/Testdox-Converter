@@ -65,7 +65,18 @@ available at [Packagist.org](https://packagist.org/packages/chippyash/testdox-co
 
 ### Installation
 
+Caveat: These instructions assume a Linux OS. (If you are a Windows/Mac user, 
+please consider adding installation and usage instructions to this repo by way 
+of a pull request.)
+
 Install [Composer](https://getcomposer.org/)
+
+Install the PHP XSL extension e.g. For debian based Linux
+<pre>
+    apt-get install php5-xsl
+</pre>
+
+PHP normally has the XML extension built-in, but you may need to install it manually.
 
 #### For production
 
