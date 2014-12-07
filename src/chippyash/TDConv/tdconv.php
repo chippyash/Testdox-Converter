@@ -40,7 +40,7 @@ try {
 
 if ($opts->getOption('h')) {
     exitWithMessage(
-            'tdconv.php <testdox.html.file.name> <output.file.name>', 
+            'tdconv <testdox.html.file.name> <output.file.name>', 
             $opts->getUsageMessage(), 0);
 }
 
@@ -49,6 +49,12 @@ $args = $opts->getArguments();
 if ($opts->getOption('t')) {
     $title = $opts->getOption('t');
     unset($args['title']);
+}
+
+if (count($args) !== 2) {
+    exitWithMessage(
+            'Expected exactly two arguments, got ' . count($args), 
+            $opts->getUsageMessage(), 1000);
 }
 
 $testdoxFile = $args[0];
