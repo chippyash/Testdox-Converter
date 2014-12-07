@@ -1,0 +1,29 @@
+{
+    "name": "chippyash/testdox-converter",
+    "description": "Converts Testdox html into Markdown format",
+    "homepage" : "https://github.com/chippyash/Testdox-Converter",
+    "license": "GPL 3.0",
+    "keywords": ["testdox","phpunit","markdown","test","contract"],
+    "authors": [
+        {
+            "name": "Ashley Kitson",
+            "email": "ashley@zf4.biz"
+        }
+    ],
+    "require": {
+        "zendframework/zend-console": "~2.3.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "chippyash\\TDConv\\": "src"
+        }
+    },
+    "config" : {
+        "bin-dir" : "bin"
+    },
+    "bin" : ["src//chippyash/TDConv/tdconv.php"],
+    "scripts" : {
+        "post-package-install": "chippyash\\TDConv\\Installer::ppi",
+        "post-update-cmd": "chippyash\\TDConv\\Installer::ppi"
+    }
+}
