@@ -17,16 +17,7 @@ Additions to the utility are time dependent.
 
 If you want more, either suggest it, or better still, fork it and provide a pull request.
 
-Check out [chippyash/Logical-Matrix](https://github.com/chippyash/Logical-matrix) for logical matrix operations
-
-Check out [chippyash/Math-Matrix](https://github.com/chippyash/Math-Matrix) for mathematical matrix operations
-
-Check out [chippyash/Strong-Type](https://github.com/chippyashl/Strong-Type) for strong type including numeric,
-rational and complex type support
-
-Check out [chippyash/Math-Type-Calculator](https://github.com/chippyash/Math-Type-Calculator) for arithmetic operations on aforementioned strong types
-
-Check out [chippyash/Builder-Pattern](https://github.com/chippyash/Builder-Pattern) for an implementation of the Builder Pattern for PHP
+See [The Matrix Packages](http://the-matrix.github.io/packages/) for other packages from chippyash
 
 ## How
 
@@ -42,6 +33,16 @@ e.g.
 ~/tdconv/bin/tdconv -t "This is the title" myLibTest.html contract.md
 
 To create the testdox file, you would run phpunit with the --testdox-html option
+
+This is a typical build script by way of example: build.sh
+
+<pre>
+#!/bin/bash
+cd ~/Projects/chippyash/source/Monad
+vendor/phpunit/phpunit/phpunit -c test/phpunit.xml --testdox-html contract.html test/
+tdconv -t "Chippyash Monad" contract.html docs/Test-Contract.md
+rm contract.html
+</pre>
 
 ### Changing the library
 
