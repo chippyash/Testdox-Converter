@@ -17,7 +17,7 @@ Additions to the utility are time dependent.
 
 If you want more, either suggest it, or better still, fork it and provide a pull request.
 
-See [The Matrix Packages](http://the-matrix.github.io/packages/) for other packages from chippyash
+Check out [ZF4 Packages](http://zf4.biz/packages?utm_source=github&utm_medium=web&utm_campaign=blinks&utm_content=testdoxconverter) for more packages
 
 ## How
 
@@ -104,3 +104,6 @@ Clone this repo, and then run Composer in local repo root to pull in dependencie
     composer install
 </pre>
 
+### History
+
+V1.0.0 Initial release

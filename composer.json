@@ -1,7 +1,7 @@
 {
     "name": "chippyash/testdox-converter",
     "description": "Converts Testdox html into Markdown format",
-    "homepage" : "http://the-matrix.github.io/",
+    "homepage" : "http://zf4.biz/packages?utm_source=packagist&utm_medium=web&utm_campaign=blinks&utm_content=testdoxconverter",
     "license": "GPL 3.0",
     "keywords": ["testdox","phpunit","markdown","test","contract"],
     "authors": [
