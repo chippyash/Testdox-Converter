@@ -11,6 +11,8 @@ Testdox formatted html output from PHPUnit into Markdown format
 To provide markdown formatted test contract files for inclusion in public files
 for a PHP library or application.
 
+See [the Monad library test contract](https://github.com/chippyash/Monad/blob/master/docs/Test-Contract.md) as an example
+
 ## When
 
 Additions to the utility are time dependent.
@@ -107,3 +109,5 @@ Clone this repo, and then run Composer in local repo root to pull in dependencie
 ### History
 
 V1.0.0 Initial release
+
+V1.0.1 Doc update
