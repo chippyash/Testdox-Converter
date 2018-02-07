@@ -111,3 +111,6 @@ Clone this repo, and then run Composer in local repo root to pull in dependencie
 V1.0.0 Initial release
 
 V1.0.1 Doc update
+
+V1.0.2 update composer - forced by packagist composer.json format change
+
